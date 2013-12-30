@@ -1,0 +1,23 @@
+@import("Foundation");
+@import("UIKit");
+ 
+String.prototype.toUTF8 = function() {
+    return NSString.stringWithUTF8String('' + this);
+};
+ 
+module.dispatch_async(function(){
+    var win = UIApplication.sharedApplication().keyWindow,
+    var label = new UILabel();
+    label.textColor = UIColor.darkTextColor();
+    label.frame = CGRectMake(20, 20, 280, 230);
+    label.font = UIFont.systemFontOfSize(24);
+    label.textAlignment = NSTextAlignmentCenter;
+    label.lineBreakMode = NSLineBreakByWordWrapping;
+    label.numberOfLines = 0;
+    label.text = 'Hello world'.toUTF8();
+    win.addSubview(label);
+});
+ 
+exports.foo = function(){
+    return 'bar';
+};

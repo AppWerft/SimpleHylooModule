@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2013 by Your Company
+
+
+# these should not be edited
+name: SimpleHylooModule
+moduleid: de.appwerft.simplehlmodule
+guid: 5eb6dbc0-b196-46a4-8042-649c88f9eddd
+platform: iphone
+minsdk: 3.2.0.GA
